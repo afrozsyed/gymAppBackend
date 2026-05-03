@@ -10,5 +10,8 @@ RUN mvn package -DskipTests -q
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
+RUN addgroup -S gymapp && adduser -S gymapp -G gymapp
+RUN chown gymapp:gymapp app.jar
+USER gymapp
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
