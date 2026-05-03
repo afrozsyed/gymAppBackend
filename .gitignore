@@ -1,0 +1,48 @@
+# Build folders
+target/
+build/
+
+# Dependency directories
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Spring Boot
+*.jar
+*.war
+*.ear
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+# Application properties (optional if sensitive)
+application.properties
+application.yml
+
+# Maven
+.mvn/
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+gradlew
+gradlew.bat
+
+# Test output
+coverage/
+
+# Temporary files
+*.tmp
+*.swp
